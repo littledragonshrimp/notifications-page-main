@@ -1,0 +1,40 @@
+h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+}
+
+button {/*
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    */
+}
+
+name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+   
+}
+
+.note{ /*individual message parent*/
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: pink;
+}
