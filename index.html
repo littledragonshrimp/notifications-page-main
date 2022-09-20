@@ -12,63 +12,82 @@
 </head>
 
 <body>
-<div class="ping">Notifications<span class="notifNum">3</span></div> 
+<div class="header">
+  <div class="ping">Notifications<span class="notifNum">3</span></div> 
 
-<button onclick="toggleHide()">Mark all as read</button>
+  <button class="mark" onclick="toggleHide()">Mark all as read</button>
+</div>
 
-<div class="list">
-  <p>
+  <div class="list">  
   <div class="note">
     <img src="assets/images/avatar-mark-webber.webp">
-  <span class="name">Mark Webber</span> reacted to your recent post My first tournament today!
-  <span class="time" >1m ago</span>
+  <span class="name">Mark Webber</span> reacted to your recent post 
+  <span class="postGroup">My first tournament today!</span>
+  <span class="time">1m ago</span>
+  <div class="unreadDot"></div>
   </div>
 
   <div class="note">
     <img src="assets/images/avatar-angela-gray.webp">
   <span class="name">Angela Gray</span> followed you
-  <span class="time" >5m ago</span>
+  <span class="time">5m ago</span>
+      <div class="unreadDot"></div>
   </div>
 
   <div class="note">
     <img src="assets/images/avatar-jacob-thompson.webp">
-  <span class="name">Jacob Thompson</span> has joined your group Chess Club
+  <span class="name">Jacob Thompson</span> has joined your group 
+  <span class="postGroup">Chess Club</span>
   <span class="time">1 day ago</span>
+     
+      <div class="unreadDot"></div>
   </div>
 
   <div class="note">
     <img src="assets/images/avatar-rizky-hasanuddin.webp">
   <span class="name">Rizky Hasanuddin</span> sent you a private message
   <span class="time">5 days ago</span>
-  <br>
-  <span class="bullshit">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-    I'm already having lots of fun and improving my game.</span>
+      <br>
+  <div class="bsmessage">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+    I'm already having lots of fun and improving my game.</div>
+      
+      <div class="unreadDot"></div>
   </div>
 
   <div class="note">
     <img src="assets/images/avatar-kimberly-smith.webp">
   <span class="name">Kimberly Smith</span> commented on your picture
+    <div class="picture"><img src="assets/images/image-chess.webp" alt="chess" id="pictureRight"></div>
     <span class="time">1 week ago</span>
+      
+      <div class="unreadDot"></div>
   </div>
 
   <div class="note">
     <img src="assets/images/avatar-nathan-peterson.webp">
-  <span class="name">Nathan Peterson</span> reacted to your recent post 5 end-game strategies to increase your win rate
+  <span class="name">Nathan Peterson</span> reacted to your recent post 
+  <span class="postGroup">5 end-game strategies to increase your win rate</span>
     <span class="time">2 weeks ago</span>
+
+      <div class="unreadDot"></div>
   </div>
 
   <div class="note">
     <img src="assets/images/avatar-anna-kim.webp">
-  <span class="name">Anna Kim</span> left the group Chess Club
+  <span class="name">Anna Kim</span> left the group 
+  <span class="postGroup">Chess Club</span>
   <span class="time">2 weeks ago</span>
+
+    <div class="unreadDot"></div>
 </div>
-</p>
+
 </div>
 
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">LittleDragonShrimp</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>. </p> 
+    
+    <p>Coded by <a href="https://github.com/littledragonshrimp">LittleDragonShrimp</a>.</p>
   </div>
 
   <script src="action.js"></script>

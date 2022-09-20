@@ -6,14 +6,15 @@ p {
 }
 
 .ping {
+    width: 100px;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: bold;
 
-    display: block;
+    display: float;
     text-decoration: bold;
-    margin-left: auto;
+   
     margin-right: auto;
-    justify-content: center;
+    
 }
 
 .notifNum {
@@ -31,28 +32,37 @@ display: float;
  color: white;
 }
 
-button {
+.mark {
+    width: 100px;
     font-family: 'Plus Jakarta Sans', sans-serif;
     display: float;
-
-    margin-left: auto;
-    margin-right: auto;
+    float: right;
+    
     padding: 0;
     border: none;
     background: none;
-    justify-content: center;
-    align-content: center;
 }
 
-.name {
+.name { /* Decoration for names of individuals */
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: bold;
     font-size: .95em;
     color: black;
-    
 }
 
-img {
+.name:hover { /* Hover effect over names of individuals */
+    color:rgb(31, 31, 175);
+}
+
+.header{ /* container for .ping .notifNum .mark (button) 
+    To-do: Center this as floating divs meeting at center or alternative method*/
+    display: table;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+img { /* profile pictures next to name */
     display: float;
     float: left;
     margin-right: auto;
@@ -80,10 +90,35 @@ img {
     padding: 15px;    
 }
 
-.bullshit{
-    f
-    margin-left: auto;
-    padding: 10px, 10px, 10px, 10px;
+.postGroup{
+    font-weight: bold;
+    color: rgb(34, 46, 85);
+}
+
+.postGroup:hover {
+    color:rgb(31, 31, 175);
+}
+
+.bsmessage{
+    
+    display: block;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+}
+
+.bsmessage:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+background-color:rgb(222, 235, 247);
+color: rgb(122, 123, 129);
 }
 
 .list{
@@ -103,9 +138,40 @@ img {
     padding-top: 2px;
 }
 
-.attribution {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+#pictureRight {
+    float: right;
+    margin-top: -15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 20px 0px 0px;
+}
+
+#pictureRight:hover{ /*QUESTION: white frame isn't wrapping around pictureRight. There is excess border length on the right of pictureRight */
     display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid white;
+
+    border-radius: 6px;
+
+}
+
+.unreadDot {/* QUESTION: red dot to the right of every UNREAD .note*/
+    display:block;
+    border: 4px;
+    border-radius: 25px;
+    border-color: red;
+}
+
+.attribution { /* "challenge by frontend mentor text */
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 8px;
+    display: flex;
+
+    padding-top: 80px;
+    padding-right: 10px;
     align-content: right;
     justify-content: right;
 }
