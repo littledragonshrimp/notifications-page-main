@@ -3,35 +3,71 @@ h1 {
 }
 p {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 20px;
+}
+
+.ping {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+
+    display: block;
+    text-decoration: bold;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.notifNum {
+font-family: 'Plus Jakarta Sans', sans-serif;
+ background-color: rgb(31, 31, 175);
+margin-left: 4px;
+display: float;
+
+ font-size: .85em;
+ padding-left: 7px;
+ padding-right: 7px;
+ padding-top: 2px;
+ padding-bottom: 2px;
+ border-radius: 25%;
+ color: white;
 }
 
 button {
-    display: inline-block;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: float;
+
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     border: none;
     background: none;
-    
+    justify-content: center;
+    align-content: center;
 }
 
-name {
+.name {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: bold;
+    font-size: .95em;
+    color: black;
     
 }
 
 img {
-    display: flex;
+    display: float;
+    float: left;
     margin-right: auto;
     max-width: 3em;
-
+    padding-right: 10px;
 }
 
 .note{ /*individual message parent*/
-    display: block;
-    flex-direction: row;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: .80em;
+
+    display: float;
     align-items: center;
     justify-content: center;
+    color: rgb(122, 123, 129);
     background-color: rgb(244, 249, 252);
     margin-left: auto;
     margin-right: auto;
@@ -41,11 +77,13 @@ img {
     padding-bottom: 16px;
     max-width: 450px;
     border-radius: 6px;
-    padding: 15px;
+    padding: 15px;    
 }
 
 .bullshit{
-    font-size: 10px;
+    f
+    margin-left: auto;
+    padding: 10px, 10px, 10px, 10px;
 }
 
 .list{
@@ -53,13 +91,21 @@ img {
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    
-   
 }
 
 .time{
+    display: flex;
+    justify-content: left;
+    align-content: flex-end;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: pink;
+    color: rgb(124, 124, 124);
     font-size: .8rem;
+    padding-top: 2px;
 }
 
+.attribution {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    align-content: right;
+    justify-content: right;
+}
