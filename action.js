@@ -1,14 +1,18 @@
 console.log("it works!");
 
-
-document.addEventListener("click")
-
 function toggleHide() {
     var x = document.getElementsByClassName("note");
-    If (x.style.backgroundColor === "blue") {
-    //    x.style.display === "block";
-        x.style.backgroundColor = "red";
-    } else {
-        x.style.backgroundColor = "blue";
+
+    for (i=0; i<x.length; i++) {
+        const htmlElement = x[i];
+
+        if (htmlElement.style.backgroundColor === "blue") {
+            htmlElement.style.backgroundColor = "red";
+            console.log("toggleHide");
+        } else {
+            htmlElement.style.backgroundColor = "blue";
+        }
     }
+
+    console.log("x", x);
 }

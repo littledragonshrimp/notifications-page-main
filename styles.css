@@ -6,18 +6,25 @@ p {
     font-size: 20px;
 }
 
-button {/*
+button {
     display: inline-block;
     padding: 0;
     border: none;
     background: none;
-    */
+    
 }
 
 name {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: bold;
-   
+    
+}
+
+img {
+    display: flex;
+    margin-right: auto;
+    max-width: 3em;
+
 }
 
 .note{ /*individual message parent*/
@@ -25,16 +32,34 @@ name {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: blue;
+    background-color: rgb(244, 249, 252);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-width: 450px;
+    border-radius: 6px;
+    padding: 15px;
 }
 
-.parent{
-    display: flex;
+.bullshit{
+    font-size: 10px;
+}
+
+.list{
+    display: block;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
+    
+   
 }
 
 .time{
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: pink;
+    font-size: .8rem;
 }
+
